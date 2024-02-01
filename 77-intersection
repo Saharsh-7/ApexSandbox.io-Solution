@@ -3,11 +3,11 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     Set<Integer> set3 = new Set<Integer>();
 
-    //for (Integer i = 0; i < set2.size(); i++) {
-        if (set1.containsAll(set2)) {
+    for (Integer i = 0; i < set1.size(); i++) {
+        if (set1.contains(set2.get(1))) {
             set3.addAll(set1);
         }
-    //}
+    }
     
    // set3.addAll(set2);
     return set3;
