@@ -2,25 +2,16 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
 {
     //code here
 
-     if (accountNames.isEmpty()) {
-      return null;
-    }
-    List<string> sortedList = new List<string>();
+    
+    //List<string> sortedList = new List<string>();
 
-    for (Integer i = 0; i < accountNames.size(); i++) {
+    /*for (Integer i = 0; i < accountNames.size(); i++) {
         sortedList.add(accountNames.get(i));
-    }
+    }*/
 
-    sortedList.sort();
+    accountNames.sort();
 
-   // if (sortedList.isEmpty()) {
-      //  return null;
-    //} else if (sortedList.size() == 0) {
-        //return 0;
-    //} else {
-        return sortedList;
-   // }
-    
-    
-    
+   
+        return accountNames;
+
 }
