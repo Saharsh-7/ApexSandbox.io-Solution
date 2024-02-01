@@ -5,7 +5,7 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     for (Integer i = 0; i < set1.size(); i++) {
         if (set1.contains(set2.get(1))) {
-            set3.addAll(set1);
+            set3.add(set1.get(i));
         }
     }
     
