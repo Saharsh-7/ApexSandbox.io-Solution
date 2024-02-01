@@ -3,9 +3,9 @@ public Boolean containsDuplicates(List<Integer> nums) {
 
     //Integer count = 0;
     Set<Integer> occurence = new Set<Integer>();
-    for (Integer i = 0; i < nums.size(); i++) {
-        if (!occurence.contains(nums.get(i))) {
-            occurence.add(nums.get(i));
+    for (Integer element : nums) {
+        if (!occurence.contains(element)) {
+            occurence.add(element);
         }
     }
 
