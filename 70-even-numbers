@@ -1,0 +1,14 @@
+public List<Integer> evenNumbers(Integer n) {
+    //code here
+
+    List<Integer> evenNumbersList = new List<Integer>();
+
+    Integer container = 0;
+    
+    for (Integer i = 1; i <= n; i++) {
+        container = i * 2;
+        evenNumbersList.add(container); 
+    }
+
+    return evenNumbersList;
+}
