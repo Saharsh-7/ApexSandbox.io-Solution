@@ -1,21 +1,9 @@
-public List<String> getNamesInAscOrder(List<String> accountNames)
-{
-    //code here
+public List<String> getNamesInAscOrder(List<String> accountNames) {
     if (accountNames.contains(null)) {
         return accountNames;
     } else {
-         List<string> sortedList = new List<string>();
-
-        for (Integer i = 0; i < accountNames.size(); i++) {
-            sortedList.add(accountNames.get(i));
-        }
-
+        List<String> sortedList = new List<String>(accountNames);
         sortedList.sort();
-
         return sortedList;
     }
-    
-   
-    
-
 }
