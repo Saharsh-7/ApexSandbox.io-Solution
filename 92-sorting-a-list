@@ -9,7 +9,7 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
 
     sortedList.sort();
 
-    if (String.isEmpty(sortedList)) {
+    if (sortedList.isEmpty()) {
         return null;
     } else {
         return sortedList;
