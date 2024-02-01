@@ -2,7 +2,7 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
 {
     //code here
     if (accountNames.contains(null)) {
-        return 'null';
+        return accountNames;
     } else {
          List<string> sortedList = new List<string>();
 
