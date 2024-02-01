@@ -11,8 +11,8 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
 
     if (sortedList.isBlank(sortedList)) {
         return null;
-    } else {
-        return sortedList;
     }
+    
+    return sortedList;
     
 }
