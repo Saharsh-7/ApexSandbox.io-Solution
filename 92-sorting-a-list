@@ -9,13 +9,13 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
 
     sortedList.sort();
 
-    if (sortedList.isEmpty()) {
-        return null;
-    } else if (sortedList.size() == 0) {
-        return 0;
-    } else {
+   // if (sortedList.isEmpty()) {
+      //  return null;
+    //} else if (sortedList.size() == 0) {
+        //return 0;
+    //} else {
         return sortedList;
-    }
+   // }
     
     
     
