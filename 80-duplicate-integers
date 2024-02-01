@@ -1,0 +1,17 @@
+public Boolean containsDuplicates(List<Integer> nums) {
+    //code here
+
+    Integer count = 0;
+    Set<Integer> occurence = new Set<Integer>();
+    for (Integer i = 0; i < nums.size(); i++) {
+        if (!occurence.contains(nums.get(i))) {
+            occurence.add(nums.get(i));
+        }
+    }
+
+    if (occurence.size() != nums.size()) {
+        return true;
+    } elsse {
+        return false;
+    }
+}
