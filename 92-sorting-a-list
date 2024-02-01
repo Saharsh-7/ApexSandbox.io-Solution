@@ -1,20 +1,21 @@
 public List<String> getNamesInAscOrder(List<String> accountNames)
 {
     //code here
-    if (accountNames.contains('null')) {
+    if (accountNames.contains(null)) {
         return null;
+    } else {
+         List<string> sortedList = new List<string>();
+
+        for (Integer i = 0; i < accountNames.size(); i++) {
+            sortedList.add(accountNames.get(i));
+        }
+
+        sortedList.sort();
+        
+        return sortedList;
     }
     
-    List<string> sortedList = new List<string>();
-
-    for (Integer i = 0; i < accountNames.size(); i++) {
-        sortedList.add(accountNames.get(i));
-    }
-
-    sortedList.sort();
-
    
-    return sortedList;
     
 
 }
