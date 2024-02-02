@@ -1,6 +1,6 @@
 public List<apxio__Student__c> selectActiveStudents() {
     // code here
 
-    List<apxio__Student__c> student = [select Id,Name,apxio__Active__c	from apxio__Student__c where Id not Null and Name not Null and apxio__Active__c = true];
+    List<apxio__Student__c> student = [select Id,Name	from apxio__Student__c where Id not Null and Name not Null and apxio__Active__c = true];
      return student;
 }
