@@ -1,7 +1,7 @@
 public Integer secondLargest(List<Integer> numbers) {
     //code here
-    Integer max = Integer.MIN_VALUE; ;
-    Integer secondMax = Integer.MIN_VALUE; ;
+    /*Integer max = numbers.get(0);
+    Integer secondMax = numbers.get(0);
 
 
     for (Integer i = 0; i < numbers.size(); i++) {
@@ -15,4 +15,18 @@ public Integer secondLargest(List<Integer> numbers) {
 
     return secondMax;
 
+}*/
+    Integer max = numbers[0];
+    Integer secondMax = numbers[0];
+
+    for (Integer i = 0; i < numbers.size(); i++) {
+        if (max <= numbers[i]) {
+            secondMax = max;
+            max = numbers[i];
+        } else if (numbers[i] > secondMax && numbers[i] != max) {
+            secondMax = numbers[i];
+        }
+    }
+
+    return secondMax;
 }
