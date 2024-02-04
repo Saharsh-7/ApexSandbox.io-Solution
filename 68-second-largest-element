@@ -1,0 +1,16 @@
+public Integer secondLargest(List<Integer> numbers) {
+    //code here
+    Integer max = numbers.get(0);
+    Integer secondMax = numbers.get(0);
+
+
+    for (Integer i = 0; i < numbers.size(); i++) {
+        if (max <= numbers.get(i)) {
+            secondMax = max;
+            max = numbers.get(i);
+        }
+    }
+
+    return secondMax;
+
+}
