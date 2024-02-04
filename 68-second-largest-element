@@ -1,7 +1,7 @@
 public Integer secondLargest(List<Integer> numbers) {
     //code here
-    Integer max = -2147483647 - 1;;
-    Integer secondMax = -2147483647 - 1;;
+    Integer max = Integer.MIN_VALUE; ;
+    Integer secondMax = Integer.MIN_VALUE; ;
 
 
     for (Integer i = 0; i < numbers.size(); i++) {
